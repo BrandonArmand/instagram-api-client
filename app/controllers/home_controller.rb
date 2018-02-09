@@ -1,11 +1,12 @@
 class HomeController < ApplicationController
+  
   def index
-    @url = Instagram.authorize_url(:redirect_uri => "https://ror-tech-test.herokuapp.com")
+    @url = Instagram.authorize_url(:redirect_uri => REDIRECT_URI)
     code = params["code"]
     @error = params["error_reason"]
     
     if code
-      user = Instagram.get_access_token(code, :redirect_uri => "https://ror-tech-test.herokuapp.com")
+      user = Instagram.get_access_token(code, :redirect_uri => REDIRECT_URI)
       session[:user_token] = user.access_token
     end
     
