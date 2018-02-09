@@ -1,0 +1,16 @@
+<% if @error == 'user_denied' %>
+    <h1>You Denied the Authorization! Please Try Again</h1>
+<% elsif @error %>
+    <h1><%= @error %></h1>
+<% end %>
+
+<div class="jumbotron">
+    <h1>Tech-Test</h1>
+    <h2 class="pull-left">Ruby on Rails</h2>
+    <% if !@user %>
+        <%= link_to "connect with Instagram", @url, class: 'btn btn-info pull-right'%>
+    <% end %>
+</div>
+<h3 class="notice">Welcome to my Tech Test project with the Instagram API!</h3>
+<h3 class="notice">I had a lot of fun making this simple project.</h3>
+<h3 class="notice">The Instagram API will only allow "Sandbox Users" to access the site.</h3>
