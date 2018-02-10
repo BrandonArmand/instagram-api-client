@@ -10,10 +10,12 @@ body{
 }
 
 .navbar-fixed-bottom{
-    p{
-        margin-top: 20px;
+    height: 25px;
+    background-color: whitesmoke;
+    p, h3{
+        margin-top: 5px;
         margin-bottom: 1px;
-        padding-top: 6px;
+        padding-top: 0px;
         padding-bottom: 6px;
     }
 }
