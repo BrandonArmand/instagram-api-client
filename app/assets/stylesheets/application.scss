@@ -1,27 +1,31 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body{
+    padding-bottom: 50px;
+}
+
 .jumbotron{
     padding-bottom: 8rem;
 }
 
-.note{
-    text-align: center;
+.navbar-fixed-bottom{
+    p{
+        margin-top: 20px;
+        margin-bottom: 1px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
 }
 
 .notice{
-    width: 33%;
     text-align: center;
-    float: left;
 }
 
 .row{
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    img{
-        border-radius: 100%;
-    }
 }
 
 .media{
