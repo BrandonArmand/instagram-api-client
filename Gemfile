@@ -7,7 +7,6 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'haml'
 
 group :production do
- gem 'pg'
 end
 
 group :development do
