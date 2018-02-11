@@ -5,7 +5,35 @@ body{
     padding-bottom: 50px;
 }
 
-.jumbotron{
+.shadow{
+    box-shadow: 
+    1px 1px black,
+    2px 2px black,
+    3px 3px black;
+}
+
+.selling{
+    color: #333333;
+    margin-top: 0px;
+    background-color: #FFBDBD;
+    height: 350px;
+    text-align: center;
+    padding-top: 150px;
+}
+h3:first-of-type{
+    padding-top: 10px;
+    color: #333333;
+    height: 50px;
+    background-color: #F1CBFF;
+}
+h3:nth-of-type(2){
+    background-color: #E1F7D5;
+}
+h3:nth-of-type(4){
+    background-color: #C9C9FF;
+}
+
+.padding {
     padding-bottom: 8rem;
 }
 
@@ -40,8 +68,4 @@ body{
         margin-right: 1.5rem;
         margin-top: 1rem;
     }
-}
-
-.body{
-    width: 100%;
 }
